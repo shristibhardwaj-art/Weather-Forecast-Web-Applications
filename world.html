@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="icon" type="image/png" href="img/icon.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="css/world.css" />
+
+  <title>World Weather</title>
+</head>
+
+<body>
+  <main class="world-page">
+    <section id="screen" class="world-card">
+
+      <div class="top-bar">
+        <div>
+          <h2>World Weather</h2>
+          <p class="date">April 7, 2024</p>
+        </div>
+
+        <button class="button">
+          <i class="fa-solid fa-circle-plus btn-icon"></i>
+        </button>
+      </div>
+
+      <div class="section-box">
+        <div class="add-section">
+          <h3>Add a New Place</h3>
+
+          <div class="search">
+            <i class="fa-solid fa-location-dot"></i>
+            <input class="searchinput" type="text" placeholder="Search city..." />
+          </div>
+
+          <div class="messages">
+            <div class="error-message">City not found</div>
+            <div class="normal-message">Search your city to add</div>
+            <div class="added-message">Successfully added ✔</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="city-box"></div>
+
+      <nav class="bottom-nav">
+        <a href="index.html"><i class="fa-solid fa-location-arrow"></i></a>
+        <a href="search.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+        <a class="active" href="world.html"><i class="fa-solid fa-earth-americas"></i></a>
+      </nav>
+
+    </section>
+  </main>
+
+  <script src="js/world.js"></script>
+</body>
+</html>

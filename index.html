@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="icon" type="image/png" href="img/icon.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="css/style.css" />
+
+  <title>Weather App</title>
+</head>
+
+<body>
+  <main class="app-container">
+
+    <section class="weather-card">
+
+      <div class="top-section">
+        <div class="city-box">
+          <i class="fa-solid fa-location-dot"></i>
+          <h1 id="city-name">Mumbai</h1>
+        </div>
+
+        <p class="sub-title">Live Weather Forecast</p>
+      </div>
+
+      <div class="main-weather">
+        <img class="weather-icon" src="img/sun.png" alt="Weather Icon" />
+
+        <div class="temperature-box">
+          <h2 id="metric">0°</h2>
+          <p id="weather-main">Sunny</p>
+        </div>
+      </div>
+
+      <div class="weather-info">
+        <div class="info-box">
+          <i class="fa-solid fa-droplet"></i>
+          <p>Humidity</p>
+          <h3><span id="humidity">60</span>%</h3>
+        </div>
+
+        <div class="info-box">
+          <i class="fa-solid fa-temperature-half"></i>
+          <p>Feels Like</p>
+          <h3><span id="feels-like">60</span>°</h3>
+        </div>
+      </div>
+
+      <div class="today-card">
+        <div>
+          <h4>Today</h4>
+          <p id="weather-main">Sunny</p>
+        </div>
+
+        <img class="weather-icons" src="img/sun.png" alt="Today Weather" />
+
+        <div class="today-temp">
+          <span id="temp-min-today">50°</span>
+          <span>/</span>
+          <span id="temp-max-today">55°</span>
+        </div>
+      </div>
+
+      <section class="future-forecast">
+        <h4>6 Days Forecast</h4>
+        <div id="future-forecast-box"></div>
+      </section>
+
+      <nav class="bottom-nav">
+        <a class="active" href="index.html">
+          <i class="fa-solid fa-location-arrow"></i>
+        </a>
+
+        <a href="search.html">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </a>
+
+        <a href="world.html">
+          <i class="fa-solid fa-earth-americas"></i>
+        </a>
+      </nav>
+
+    </section>
+
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

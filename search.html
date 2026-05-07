@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="icon" type="image/png" href="img/icon.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="css/search.css" />
+
+  <title>Search Weather</title>
+</head>
+
+<body>
+  <main class="search-page">
+    <section id="screen" class="search-card">
+
+      <div class="header">
+        <h2>Search Weather</h2>
+        <p>Find weather by city, state, or country name</p>
+      </div>
+
+      <div class="search">
+        <i class="fa-solid fa-location-dot"></i>
+        <input class="searchinput" type="text" placeholder="Search city..." />
+      </div>
+
+      <div class="message">
+        <i class="fa-solid fa-cloud-sun"></i>
+        <p>Enter a location name to get live weather details.</p>
+      </div>
+
+      <div class="error-message">
+        <i class="fa-solid fa-circle-exclamation"></i>
+        <p>Location not found. Please try again.</p>
+      </div>
+
+      <div class="return">
+        <div class="box">
+          <div class="weather-box">
+            <div class="name">
+              <div class="city-name">London</div>
+              <div class="weather-temp">20°</div>
+            </div>
+
+            <div class="weather-icon">
+              <img class="weather-img" src="img/haze.png" alt="Weather Icon" />
+            </div>
+          </div>
+
+          <div class="weather-desc">
+            <div class="desc-box">
+              <i class="fa-solid fa-wind"></i>
+              <div class="desc-name">Wind</div>
+              <div class="desc-info wind">15 m/s</div>
+            </div>
+
+            <div class="desc-box">
+              <i class="fa-solid fa-temperature-full"></i>
+              <div class="desc-name">Pressure</div>
+              <div class="desc-info pressure">15 mbar</div>
+            </div>
+
+            <div class="desc-box">
+              <i class="fa-solid fa-droplet"></i>
+              <div class="desc-name">Humidity</div>
+              <div class="desc-info humidity">50%</div>
+            </div>
+          </div>
+
+          <div class="weather-desc">
+            <div class="desc-box">
+              <i class="fa-solid fa-sun"></i>
+              <div class="desc-name">Sunrise</div>
+              <div class="desc-info sunrise">12:00:00</div>
+            </div>
+
+            <div class="desc-box">
+              <i class="fa-solid fa-cloud-sun"></i>
+              <div class="desc-name">Sunset</div>
+              <div class="desc-info sunset">12:00:00</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <nav class="bottom-nav">
+        <a href="index.html"><i class="fa-solid fa-location-arrow"></i></a>
+        <a class="active" href="search.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+        <a href="world.html"><i class="fa-solid fa-earth-americas"></i></a>
+      </nav>
+
+    </section>
+  </main>
+
+  <script src="js/search.js"></script>
+</body>
+</html>
